@@ -1,0 +1,25 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+k141_1_1             -             82 Claudin_2            PF13903.10   192   0.00054   10.3   7.7   1   1   2.8e-05   0.00061   10.1   7.7    98   146    15    66     2    76 0.82 # 142 # 387 # -1 # ID=9_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.313
+k141_20_1            -            119 DUF4131              PF13567.10   165     0.096    2.9  14.6   1   2   0.00025    0.0055    6.9   1.7    11    51     4    51     2    62 0.75 # 49 # 405 # 1 # ID=17_1;partial=01;start_type=TTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.594
+k141_20_1            -            119 DUF4131              PF13567.10   165     0.096    2.9  14.6   2   2     0.011      0.24    1.6   5.4     9    45    84   118    75   119 0.59 # 49 # 405 # 1 # ID=17_1;partial=01;start_type=TTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.594
+k141_28_1            -            100 DUF4149              PF13664.10   102   3.5e-06   17.9   0.5   1   1   2.1e-07   4.5e-06   17.5   0.5    13    97    10    89     6    93 0.83 # 1 # 300 # -1 # ID=18_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.723
+k141_1_1             -             82 DUF5090              PF17009.9    187      0.64    0.4  18.1   1   1     0.035      0.77    0.2  18.1   101   158    12    69     3    74 0.83 # 142 # 387 # -1 # ID=9_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.313
+k141_4_1             -             70 GlgS                 PF08971.15    66   3.7e-05   14.3   0.1   1   2      0.26       5.6   -2.3   0.0    45    54    21    30    16    35 0.64 # 2 # 211 # 1 # ID=25_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.448
+k141_4_1             -             70 GlgS                 PF08971.15    66   3.7e-05   14.3   0.1   2   2   3.2e-06     7e-05   13.4   0.0    42    66    41    65    36    65 0.94 # 2 # 211 # 1 # ID=25_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.448
+k141_1_1             -             82 Herpes_LMP1          PF05297.15   386       3.2   -2.7  14.4   1   1      0.16       3.4   -2.8  14.4    29    89     5    65     1    73 0.78 # 142 # 387 # -1 # ID=9_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.313
+k141_11_1            -             64 Pex24p               PF06398.15   358     0.012    5.1   9.2   1   1   0.00051     0.011    5.2   9.2    42    75    27    59    10    63 0.89 # 253 # 444 # -1 # ID=13_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.339
+k141_28_1            -            100 RAMP4                PF06624.16    60   0.00052   10.6   1.5   1   2    0.0028     0.061    4.0   0.9    38    52    40    54    37    55 0.85 # 1 # 300 # -1 # ID=18_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.723
+k141_28_1            -            100 RAMP4                PF06624.16    60   0.00052   10.6   1.5   2   2    0.0012     0.027    5.1   0.0    32    53    60    80    56    81 0.83 # 1 # 300 # -1 # ID=18_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.723
+k141_11_1            -             64 SpoIISA_toxin        PF14171.10   243   0.00091    9.4   7.2   1   1   4.5e-05   0.00099    9.3   7.2    30    72    18    60     7    62 0.88 # 253 # 444 # -1 # ID=13_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.339
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /home/lucas/databases/Pfam-A.hmm
+# Target file:     proteins.faa
+# Option settings: hmmsearch --domtblout annotation_results.domtblout /home/lucas/databases/Pfam-A.hmm proteins.faa 
+# Current dir:     /home/lucas/metagenomica_riacho/data/assembly_megahit
+# Date:            Tue Jul 29 11:01:34 2025
+# [ok]

@@ -1,0 +1,140 @@
+DEFINITION  seqnum=1;seqlen=301;seqhdr="k141_0 flag=1 multi=1.0000 len=301";version=Prodigal.v2.6.3;run_type=Metagenomic;model="30|Mycobacterium_leprae_TN|B|57.8|11|1";gc_cont=57.80;transl_table=11;uses_sd=1
+FEATURES             Location/Qualifiers
+     CDS             complement(<3..146)
+                     /note="ID=1_1;partial=10;start_type=GTG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.542;conf=75.34;score=4.86;cscore=0.88;sscore=3.98;rscore=6.40;uscore=-1.90;tscore=-0.51;"
+//
+DEFINITION  seqnum=2;seqlen=306;seqhdr="k141_18 flag=1 multi=1.0000 len=306";version=Prodigal.v2.6.3;run_type=Metagenomic;model="1|Mycoplasma_pneumoniae_M129|B|40.0|4|0";gc_cont=40.00;transl_table=4;uses_sd=0
+FEATURES             Location/Qualifiers
+//
+DEFINITION  seqnum=3;seqlen=342;seqhdr="k141_14 flag=0 multi=1.0000 len=342";version=Prodigal.v2.6.3;run_type=Metagenomic;model="1|Mycoplasma_pneumoniae_M129|B|40.0|4|0";gc_cont=40.00;transl_table=4;uses_sd=0
+FEATURES             Location/Qualifiers
+//
+DEFINITION  seqnum=4;seqlen=404;seqhdr="k141_30 flag=1 multi=1.0000 len=404";version=Prodigal.v2.6.3;run_type=Metagenomic;model="46|Tropheryma_whipplei_TW08_27|B|46.3|11|1";gc_cont=46.30;transl_table=11;uses_sd=1
+FEATURES             Location/Qualifiers
+     CDS             340..>402
+                     /note="ID=4_1;partial=01;start_type=GTG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.603;conf=79.48;score=5.89;cscore=2.71;sscore=3.18;rscore=3.55;uscore=-1.02;tscore=0.66;"
+//
+DEFINITION  seqnum=5;seqlen=430;seqhdr="k141_10 flag=1 multi=152.0000 len=430";version=Prodigal.v2.6.3;run_type=Metagenomic;model="45|Treponema_pallidum_Nichols|B|52.8|11|1";gc_cont=52.80;transl_table=11;uses_sd=1
+FEATURES             Location/Qualifiers
+     CDS             complement(<3..65)
+                     /note="ID=5_1;partial=10;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.571;conf=97.46;score=15.87;cscore=0.56;sscore=15.31;rscore=12.11;uscore=-0.80;tscore=4.00;"
+//
+DEFINITION  seqnum=6;seqlen=336;seqhdr="k141_26 flag=1 multi=1.0000 len=336";version=Prodigal.v2.6.3;run_type=Metagenomic;model="6|Anaplasma_phagocytophilum_HZ|B|41.6|11|1";gc_cont=41.60;transl_table=11;uses_sd=1
+FEATURES             Location/Qualifiers
+     CDS             complement(168..>335)
+                     /note="ID=6_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.458;conf=85.99;score=7.89;cscore=4.67;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;"
+//
+DEFINITION  seqnum=7;seqlen=406;seqhdr="k141_5 flag=1 multi=5.0000 len=406";version=Prodigal.v2.6.3;run_type=Metagenomic;model="3|Aeropyrum_pernix_K1|A|56.3|11|0";gc_cont=56.30;transl_table=11;uses_sd=0
+FEATURES             Location/Qualifiers
+//
+DEFINITION  seqnum=8;seqlen=353;seqhdr="k141_22 flag=0 multi=1.0000 len=353";version=Prodigal.v2.6.3;run_type=Metagenomic;model="1|Mycoplasma_pneumoniae_M129|B|40.0|4|0";gc_cont=40.00;transl_table=4;uses_sd=0
+FEATURES             Location/Qualifiers
+//
+DEFINITION  seqnum=9;seqlen=388;seqhdr="k141_1 flag=1 multi=1.0000 len=388";version=Prodigal.v2.6.3;run_type=Metagenomic;model="49|_Nostoc_azollae__0708|B|38.5|11|1";gc_cont=38.40;transl_table=11;uses_sd=1
+FEATURES             Location/Qualifiers
+     CDS             complement(142..>387)
+                     /note="ID=9_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.313;conf=80.65;score=6.21;cscore=2.99;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;"
+//
+DEFINITION  seqnum=10;seqlen=382;seqhdr="k141_19 flag=1 multi=1.0000 len=382";version=Prodigal.v2.6.3;run_type=Metagenomic;model="11|Candidatus_Amoebophilus_asiaticus_5a2|B|35.0|11|0";gc_cont=35.00;transl_table=11;uses_sd=0
+FEATURES             Location/Qualifiers
+     CDS             <2..97
+                     /note="ID=10_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.500;conf=58.76;score=1.54;cscore=-1.68;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;"
+     CDS             240..>380
+                     /note="ID=10_2;partial=01;start_type=TTG;rbs_motif=AATAA;rbs_spacer=5bp;gc_cont=0.270;conf=53.32;score=0.58;cscore=7.30;sscore=-6.72;rscore=5.00;uscore=-2.09;tscore=-9.63;"
+//
+DEFINITION  seqnum=11;seqlen=404;seqhdr="k141_31 flag=1 multi=1.0000 len=404";version=Prodigal.v2.6.3;run_type=Metagenomic;model="3|Aeropyrum_pernix_K1|A|56.3|11|0";gc_cont=56.30;transl_table=11;uses_sd=0
+FEATURES             Location/Qualifiers
+//
+DEFINITION  seqnum=12;seqlen=454;seqhdr="k141_15 flag=0 multi=1.0000 len=454";version=Prodigal.v2.6.3;run_type=Metagenomic;model="6|Anaplasma_phagocytophilum_HZ|B|41.6|11|1";gc_cont=41.60;transl_table=11;uses_sd=1
+FEATURES             Location/Qualifiers
+     CDS             <3..137
+                     /note="ID=12_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.452;conf=90.28;score=9.69;cscore=6.47;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;"
+//
+DEFINITION  seqnum=13;seqlen=444;seqhdr="k141_11 flag=0 multi=1.0000 len=444";version=Prodigal.v2.6.3;run_type=Metagenomic;model="29|Methylacidiphilum_infernorum_V4|B|45.5|11|0";gc_cont=45.50;transl_table=11;uses_sd=0
+FEATURES             Location/Qualifiers
+     CDS             complement(253..>444)
+                     /note="ID=13_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.339;conf=73.29;score=4.39;cscore=1.17;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;"
+//
+DEFINITION  seqnum=14;seqlen=424;seqhdr="k141_27 flag=1 multi=1.0000 len=424";version=Prodigal.v2.6.3;run_type=Metagenomic;model="48|Xylella_fastidiosa_Temecula1|B|51.8|11|1";gc_cont=51.80;transl_table=11;uses_sd=1
+FEATURES             Location/Qualifiers
+     CDS             <2..76
+                     /note="ID=14_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.507;conf=56.92;score=1.21;cscore=-2.01;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;"
+//
+DEFINITION  seqnum=15;seqlen=394;seqhdr="k141_2 flag=1 multi=1.0000 len=394";version=Prodigal.v2.6.3;run_type=Metagenomic;model="1|Mycoplasma_pneumoniae_M129|B|40.0|4|0";gc_cont=40.00;transl_table=4;uses_sd=0
+FEATURES             Location/Qualifiers
+//
+DEFINITION  seqnum=16;seqlen=429;seqhdr="k141_23 flag=1 multi=1.0000 len=429";version=Prodigal.v2.6.3;run_type=Metagenomic;model="45|Treponema_pallidum_Nichols|B|52.8|11|1";gc_cont=52.80;transl_table=11;uses_sd=1
+FEATURES             Location/Qualifiers
+     CDS             365..>427
+                     /note="ID=16_1;partial=01;start_type=GTG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.635;conf=92.09;score=10.68;cscore=1.06;sscore=9.61;rscore=12.11;uscore=-0.80;tscore=-1.70;"
+//
+DEFINITION  seqnum=17;seqlen=405;seqhdr="k141_20 flag=1 multi=554.0000 len=405";version=Prodigal.v2.6.3;run_type=Metagenomic;model="9|Brucella_canis_ATCC_23365|B|57.2|11|1";gc_cont=57.20;transl_table=11;uses_sd=1
+FEATURES             Location/Qualifiers
+     CDS             49..>405
+                     /note="ID=17_1;partial=01;start_type=TTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.594;conf=99.85;score=28.23;cscore=41.50;sscore=-13.27;rscore=-4.56;uscore=-1.57;tscore=-7.14;"
+//
+DEFINITION  seqnum=18;seqlen=301;seqhdr="k141_28 flag=1 multi=1.0000 len=301";version=Prodigal.v2.6.3;run_type=Metagenomic;model="38|Rhodococcus_jostii_RHA1|B|65.0|11|1";gc_cont=65.10;transl_table=11;uses_sd=1
+FEATURES             Location/Qualifiers
+     CDS             complement(<1..>300)
+                     /note="ID=18_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.723;conf=99.74;score=25.91;cscore=24.30;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;"
+//
+DEFINITION  seqnum=19;seqlen=650;seqhdr="k141_6 flag=1 multi=1.0000 len=650";version=Prodigal.v2.6.3;run_type=Metagenomic;model="8|Bacteroides_fragilis_NCTC_9343|B|43.2|11|0";gc_cont=43.20;transl_table=11;uses_sd=0
+FEATURES             Location/Qualifiers
+     CDS             complement(<1..174)
+                     /note="ID=19_1;partial=10;start_type=ATG;rbs_motif=AAAAA;rbs_spacer=10bp;gc_cont=0.368;conf=50.41;score=0.07;cscore=-4.48;sscore=4.55;rscore=6.25;uscore=1.89;tscore=4.12;"
+//
+DEFINITION  seqnum=20;seqlen=429;seqhdr="k141_16 flag=1 multi=1.0000 len=429";version=Prodigal.v2.6.3;run_type=Metagenomic;model="45|Treponema_pallidum_Nichols|B|52.8|11|1";gc_cont=52.80;transl_table=11;uses_sd=1
+FEATURES             Location/Qualifiers
+     CDS             365..>427
+                     /note="ID=20_1;partial=01;start_type=GTG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.651;conf=89.31;score=9.23;cscore=0.65;sscore=8.58;rscore=12.11;uscore=-1.83;tscore=-1.70;"
+//
+DEFINITION  seqnum=21;seqlen=409;seqhdr="k141_32 flag=1 multi=1.0000 len=409";version=Prodigal.v2.6.3;run_type=Metagenomic;model="45|Treponema_pallidum_Nichols|B|52.8|11|1";gc_cont=52.80;transl_table=11;uses_sd=1
+FEATURES             Location/Qualifiers
+     CDS             complement(<3..65)
+                     /note="ID=21_1;partial=10;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.603;conf=98.39;score=17.90;cscore=1.81;sscore=16.09;rscore=12.95;uscore=-0.85;tscore=4.00;"
+//
+DEFINITION  seqnum=22;seqlen=343;seqhdr="k141_12 flag=0 multi=1.0000 len=343";version=Prodigal.v2.6.3;run_type=Metagenomic;model="46|Tropheryma_whipplei_TW08_27|B|46.3|11|1";gc_cont=46.30;transl_table=11;uses_sd=1
+FEATURES             Location/Qualifiers
+     CDS             126..>341
+                     /note="ID=22_1;partial=01;start_type=TTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.352;conf=55.09;score=0.89;cscore=8.91;sscore=-8.03;rscore=-3.16;uscore=-0.73;tscore=-4.13;"
+//
+DEFINITION  seqnum=23;seqlen=360;seqhdr="k141_21 flag=0 multi=1.7032 len=360";version=Prodigal.v2.6.3;run_type=Metagenomic;model="3|Aeropyrum_pernix_K1|A|56.3|11|0";gc_cont=56.30;transl_table=11;uses_sd=0
+FEATURES             Location/Qualifiers
+//
+DEFINITION  seqnum=24;seqlen=320;seqhdr="k141_24 flag=1 multi=1.0000 len=320";version=Prodigal.v2.6.3;run_type=Metagenomic;model="3|Aeropyrum_pernix_K1|A|56.3|11|0";gc_cont=56.30;transl_table=11;uses_sd=0
+FEATURES             Location/Qualifiers
+//
+DEFINITION  seqnum=25;seqlen=376;seqhdr="k141_4 flag=1 multi=1.0000 len=376";version=Prodigal.v2.6.3;run_type=Metagenomic;model="1|Mycoplasma_pneumoniae_M129|B|40.0|4|0";gc_cont=40.00;transl_table=4;uses_sd=0
+FEATURES             Location/Qualifiers
+     CDS             <2..211
+                     /note="ID=25_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.448;conf=74.81;score=4.73;cscore=1.52;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;"
+//
+DEFINITION  seqnum=26;seqlen=429;seqhdr="k141_29 flag=1 multi=186.0000 len=429";version=Prodigal.v2.6.3;run_type=Metagenomic;model="45|Treponema_pallidum_Nichols|B|52.8|11|1";gc_cont=52.80;transl_table=11;uses_sd=1
+FEATURES             Location/Qualifiers
+     CDS             365..>427
+                     /note="ID=26_1;partial=01;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.603;conf=72.02;score=4.11;cscore=-1.57;sscore=5.68;rscore=12.11;uscore=-1.83;tscore=4.00;"
+//
+DEFINITION  seqnum=27;seqlen=450;seqhdr="k141_17 flag=1 multi=1.0000 len=450";version=Prodigal.v2.6.3;run_type=Metagenomic;model="49|_Nostoc_azollae__0708|B|38.5|11|1";gc_cont=38.40;transl_table=11;uses_sd=1
+FEATURES             Location/Qualifiers
+     CDS             <3..191
+                     /note="ID=27_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.476;conf=80.41;score=6.14;cscore=2.92;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;"
+//
+DEFINITION  seqnum=28;seqlen=360;seqhdr="k141_25 flag=0 multi=0.8995 len=360";version=Prodigal.v2.6.3;run_type=Metagenomic;model="3|Aeropyrum_pernix_K1|A|56.3|11|0";gc_cont=56.30;transl_table=11;uses_sd=0
+FEATURES             Location/Qualifiers
+//
+DEFINITION  seqnum=29;seqlen=578;seqhdr="k141_33 flag=1 multi=1.0000 len=578";version=Prodigal.v2.6.3;run_type=Metagenomic;model="1|Mycoplasma_pneumoniae_M129|B|40.0|4|0";gc_cont=40.00;transl_table=4;uses_sd=0
+FEATURES             Location/Qualifiers
+//
+DEFINITION  seqnum=30;seqlen=379;seqhdr="k141_7 flag=0 multi=1.0000 len=379";version=Prodigal.v2.6.3;run_type=Metagenomic;model="48|Xylella_fastidiosa_Temecula1|B|51.8|11|1";gc_cont=51.80;transl_table=11;uses_sd=1
+FEATURES             Location/Qualifiers
+     CDS             complement(293..>379)
+                     /note="ID=30_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.494;conf=54.26;score=0.74;cscore=-2.48;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;"
+//
+DEFINITION  seqnum=31;seqlen=355;seqhdr="k141_8 flag=0 multi=1.0000 len=355";version=Prodigal.v2.6.3;run_type=Metagenomic;model="46|Tropheryma_whipplei_TW08_27|B|46.3|11|1";gc_cont=46.30;transl_table=11;uses_sd=1
+FEATURES             Location/Qualifiers
+     CDS             complement(<1..90)
+                     /note="ID=31_1;partial=10;start_type=GTG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.367;conf=73.51;score=4.44;cscore=0.93;sscore=3.51;rscore=3.55;uscore=-0.69;tscore=0.66;"
+//
+DEFINITION  seqnum=32;seqlen=409;seqhdr="k141_9 flag=1 multi=3.9254 len=409";version=Prodigal.v2.6.3;run_type=Metagenomic;model="3|Aeropyrum_pernix_K1|A|56.3|11|0";gc_cont=56.30;transl_table=11;uses_sd=0
+FEATURES             Location/Qualifiers
+//
