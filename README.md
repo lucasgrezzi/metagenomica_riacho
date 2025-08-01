@@ -1,107 +1,87 @@
-# Análise Metagenômica do Riacho
+# Projeto de Análise Metagenômica de Riacho
 
-Este repositório contém os dados e a documentação do pipeline de análise metagenômica de uma amostra de riacho.
+---
 
-## Estrutura do Projeto
-metagenomica_riacho/
-├── data/                            # Contém dados de entrada e resultados intermediários
-│   ├── assembly_megahit/            # Resultados da montagem (MEGAHIT) e predição de genes (Prodigal)
-│   │   ├── annotation_results.domtblout # Saída HMMER anotada
-│   │   ├── final.contigs.fa         # Contigs montadas
-│   │   └── proteins.faa             # Proteínas preditas
-│   ├── databases/                   # Banco de dados HMM (Pfam) e índices
-│   │   └── Pfam-A.hmm               # Arquivo principal do Pfam (e seus índices .h3*)
-│   ├── raw/                         # Reads FastQ brutas
-│   └── trimmed_final/               # Reads FastQ após o trimming
-├── results/                         # Contém os resultados finais das análises
-│   ├── annotation_analysis/         # Gráficos e sumarizações da anotação Pfam (treemap)
-│   ├── fastqc/                      # Relatórios FastQC para reads brutas e/ou limpas
-│   └── hmm_results/                 # Resultados brutos do hmmsearch (se salvos aqui, ou linkados)
-├── scripts/                         # Scripts Python para as etapas de análise
-│   └── analyze_annotations.py       # Script Python para analisar e visualizar anotações Pfam
-├── pipeline_commands.sh             # Arquivo com os comandos de terminal executados em cada etapa
-└── README.md                        # Este arquivo de documentação
+Este repositório contém o pipeline completo para a **análise metagenômica de uma amostra de riacho**, abrangendo desde o controle de qualidade das reads brutas até a anotação funcional e visualização dos resultados Pfam. O projeto foi desenvolvido para demonstrar um fluxo de trabalho padrão em metagenômica, utilizando ferramentas de bioinformática populares e scripts Python para análise e visualização de dados.
 
-## Ferramentas Utilizadas
+---
 
-As seguintes ferramentas de bioinformática foram utilizadas no pipeline e devem ser instaladas (preferencialmente via Conda) em um ambiente virtual:
+## Configuração do Ambiente Conda
 
-* **FastQC**: Controle de qualidade das reads.
-* **Trimmomatic**: Remoção de adaptadores e filtragem de qualidade.
-* **MEGAHIT**: Montagem de genomas metagenômicos.
-* **Prodigal**: Predição de genes em sequências nucleotídicas.
-* **HMMER (hmmsearch)**: Busca de domínios de proteínas usando Modelos Ocultos de Markov (HMMs).
-* **Python 3**: Para scripts de análise de dados (com bibliotecas como Pandas, Matplotlib, Seaborn e Squarify).
+Para reproduzir este projeto, é **essencial configurar o ambiente Conda** com todas as ferramentas e bibliotecas necessárias. Siga os passos abaixo:
 
-## Configuração do Ambiente (Conda)
+1.  **Crie o ambiente Conda** (se ainda não o fez):
+    ```bash
+    conda create -n metagenomics_env python=3.9 -y
+    ```
 
-Para configurar o ambiente Conda com as ferramentas e bibliotecas necessárias:
+2.  **Ative o ambiente recém-criado**:
+    ```bash
+    conda activate metagenomics_env
+    ```
 
-```bash
-# Crie o ambiente (se ainda não o fez)
-conda create -n metagenomics_env python=3.9 -y
+3.  **Instale as ferramentas de bioinformática via Bioconda**:
+    ```bash
+    conda install -c bioconda fastqc trimmomatic megahit prodigal hmmer -y
+    ```
 
-# Ative o ambiente
-conda activate metagenomics_env
+4.  **Instale as bibliotecas Python** para análise e visualização:
+    ```bash
+    pip install pandas matplotlib seaborn squarify
+    ```
 
-# Instale as ferramentas de bioinformática via Bioconda
-conda install -c bioconda fastqc trimmomatic megahit prodigal hmmer -y
+5.  **Desative o ambiente** ao terminar (opcional):
+    ```bash
+    conda deactivate
+    ```
 
-# Instale as bibliotecas Python
-pip install pandas matplotlib seaborn squarify
+---
 
-# Desative o ambiente ao terminar (opcional)
-conda deactivate
+## Fluxo de Trabalho e Comandos Executados
 
-Fluxo de Trabalho e Comandos Executados
-Todas as etapas do pipeline foram executadas no terminal WSL. Os comandos detalhados para cada etapa estão documentados no arquivo pipeline_commands.sh localizado na raiz deste repositório.
+Todas as etapas do pipeline foram executadas no terminal WSL. Os **comandos detalhados para cada etapa** estão documentados no arquivo `pipeline_commands.sh`, localizado na raiz deste repositório.
 
-Etapas Principais:
-Download dos Dados Brutos (FastQ): Aquisição das reads FastQ de sequenciamento.
+### Etapas Principais do Pipeline:
 
-Controle de Qualidade e Trimming das Reads: Avaliação da qualidade e remoção de adaptadores/bases de baixa qualidade.
+* **Download dos Dados Brutos (FastQ)**: Aquisição das reads FastQ de sequenciamento.
+* **Controle de Qualidade e Trimming das Reads**: Avaliação da qualidade e remoção de adaptadores/bases de baixa qualidade.
+* **Montagem do Genoma Metagenômico**: Reconstrução de contigs a partir das reads limpas.
+* **Predição de Genes e Proteínas**: Identificação de genes e extração de suas sequências de aminoácidos nas contigs.
+* **Anotação Funcional (HMMER/Pfam)**: Atribuição de funções aos domínios proteicos através de busca em banco de dados Pfam.
+* **Análise e Visualização das Anotações Pfam**: Sumarização e representação gráfica das famílias Pfam mais abundantes.
 
-Montagem do Genoma Metagenômico: Reconstrução de contigs a partir das reads limpas.
+---
 
-Predição de Genes e Proteínas: Identificação de genes e extração de suas sequências de aminoácidos nas contigs.
+## Execução da Análise de Anotações (Script Python)
 
-Anotação Funcional (HMMER/Pfam): Atribuição de funções aos domínios proteicos através de busca em banco de dados Pfam.
+O script `analyze_annotations.py` é responsável por ler os resultados brutos da anotação do `hmmsearch` (`annotation_results.domtblout`), aplicar filtros e gerar um treemap das famílias Pfam mais frequentes.
 
-Análise e Visualização das Anotações Pfam: Sumarização e representação gráfica das famílias Pfam mais abundantes.
+Para **executar a análise e gerar o gráfico**:
 
-Execução da Análise de Anotações (Script Python)
-O script analyze_annotations.py é responsável por ler os resultados brutos da anotação do hmmsearch (annotation_results.domtblout), aplicar filtros e gerar um treemap das famílias Pfam mais frequentes.
+1.  Certifique-se de que você está no diretório raiz do projeto (`metagenomica_riacho/`).
+2.  Ative seu ambiente Conda:
+    ```bash
+    conda activate metagenomics_env
+    ```
+3.  Execute o script Python:
+    ```bash
+    python scripts/analyze_annotations.py
+    ```
+    O gráfico (treemap) será salvo em `results/annotation_analysis/pfam_families_treemap.png`.
 
-Para executar a análise e gerar o gráfico:
+---
 
-Certifique-se de que você está no diretório raiz do projeto (metagenomica_riacho/).
+## Análise de Resultados
 
-Ative seu ambiente Conda: conda activate metagenomics_env
+O **treemap** gerado em `results/annotation_analysis/pfam_families_treemap.png` visualiza a proporção de cada família Pfam encontrada nas proteínas preditas, após a aplicação de um limiar de E-value. Cada retângulo representa uma família Pfam, e seu tamanho é proporcional à sua contagem (número de proteínas que contêm aquele domínio). Isso oferece um **panorama funcional das entidades microbianas** presentes na amostra do riacho.
 
-Execute o script Python:
+---
 
-Bash
+## Próximos Passos (Sugestões para Aprimoramento)
 
-python scripts/analyze_annotations.py
-O gráfico (treemap) será salvo em results/annotation_analysis/pfam_families_treemap.png.
+Este projeto pode ser expandido com as seguintes análises adicionais:
 
-Análise de Resultados
-O treemap gerado em results/annotation_analysis/pfam_families_treemap.png visualiza a proporção de cada família Pfam encontrada nas proteínas preditas, após a aplicação de um limiar de E-value. Cada retângulo representa uma família Pfam, e seu tamanho é proporcional à sua contagem (número de proteínas que contêm aquele domínio). Isso oferece um panorama funcional das entidades microbianas presentes na amostra do riacho.
-
-Próximos Passos (Sugestões para Aprimoramento)
-Análise Taxonômica: Identificar os organismos presentes na amostra.
-
-Análise de Vias Metabólicas: Mapear as proteínas para vias bioquímicas conhecidas (ex: KEGG, GO).
-
-Montagem de Genomas de Organismos Específicos (MAGs): Reconstruir genomas de espécies abundantes a partir das contigs.
-
-Comparação entre Amostras: Se tiver mais amostras, comparar os perfis funcionais e/ou taxonômicos.
-
-
-**Como usar este `README.md`:**
-
-1.  **Crie (ou substitua) o arquivo `README.md`** na pasta raiz do seu projeto (`metagenomica_riacho/`).
-2.  **Cole todo o conteúdo acima** nele.
-3.  **Faça uma última revisão:** Verifique se os nomes das pastas, arquivos e as descrições correspondem exatamente ao que você tem e fez.
-
-Com este `README.md` e o `pipeline_commands.sh`, seu projeto estará extremamente bem documentado e pronto para ser compartilhado ou servir de base para futuras análises mais aprofundadas!
+* **Análise Taxonômica**: Identificar os organismos presentes na amostra.
+* **Análise de Vias Metabólicas**: Mapear as proteínas para vias bioquímicas conhecidas (ex: KEGG, GO).
+* **Montagem de Genomas de Organismos Específicos (MAGs)**: Reconstruir genomas de espécies abundantes a partir das contigs.
+* **Comparação entre Amostras**: Se houver mais amostras, comparar os perfis funcionais e/ou taxonômicos.
