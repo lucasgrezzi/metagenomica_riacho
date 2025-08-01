@@ -1,0 +1,13 @@
+# Marca arquivos Python como a linguagem principal
+*.py linguist-language=Python
+
+# Se houver arquivos HTML gerados por ferramentas (FastQC, etc.)
+# ou que são mais para documentação e você não quer que eles dominem a contagem
+# você pode marcá-los como "vendored" (recursos de terceiros) ou "generated" (gerados)
+# Isso fará com que eles não contem tão fortemente na estatística principal.
+# Escolha a que faz mais sentido para seus arquivos HTML:
+*.html linguist-vendored
+# OU
+# *.html linguist-generated
+# OU, se forem apenas arquivos de documentação leves
+# *.html linguist-documentation
